@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylessheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+	<LINK REL=StyleSheet HREF="style.css" TYPE="text/css">
+	<title>Project HomePage</title>
+	<style>
+		img{
+		max-height: 200px;
+		text-align: center;
+	}
+		</style>
+</head>
+
+<body>
+
+<h1></h1>
+<nav>
+<ol>
+	<li class="navigation"><p><a href="Project3.html">Projects</a></p></li>
+</ol>
+</nav>
+
+
+<h1>One Way Out </h1>
+<div class="slideshow-container">
+
+	<div class="mySlides fade">
+	  <img src="OneWay Out COmbat.png" style="width:100%">
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="OneWayOut Combat.png" style="width:100%">
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="ONewayoutcombat.png" style="width:100%">
+	</div>
+	
+
+
+</div>
+<br>
+	<div style="text-align:center">
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+
+</div>
+
+<p>By: Thomas Tabacchi, Jajuan Webster and Lab Nguyen</p>
+
+<h2>Summary</h2>
+<p>
+An endless typing game aimed at teaching people how to learn sign language. In this game you must type out 
+the name seen above the slime and which is a mix between english letters and the sign language letters so 
+the player will eventually learn. This gets progressively harder the longer that the player survives until 
+all the letters are sign language.
+</p>
+
+<h2>What I Worked On</h2>
+<ul>
+	<li>Highscore</li>
+	<li>Drops/perks</li>
+	<li>Health</li>
+	<li>Setting up classes</li>
+	<li>Player movement</li>
+</ul>
+<script>
+	var slideIndex = 0;
+	showSlides();
+	
+	function showSlides() {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	  setTimeout(showSlides, 3000); // Change image every 2 seconds
+	}
+	</script>
+</body>

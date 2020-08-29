@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<LINK REL=StyleSheet HREF="style.css" TYPE="text/css">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+	<title>Portfolio HomePage</title>	
+</head>
+<body>
+
+<nav>
+<ol>
+	<li class="navigation"><p><a href="Project3.html">Projects</a></p></li>
+
+</ol>
+<div id="fullright">
+
+	<div class="slideshow-container-analog">
+	
+		<div class="mySlides fade">
+			<img src="Sludgescape Boxart (1).png"  height= "500" width= "320">
+		</div>	
+		
+		<div class="mySlides fade">
+		  <img src="20190423_210750.jpg" height= "500" width= "320" >
+		</div>
+		
+		<div class="mySlides fade">
+		  <img src="20190423_210800.jpg"  height= "500" width= "320">
+		</div>	
+
+		<div class="mySlides fade">
+			<img src="20190423_210810.jpg" height= "500" width= "320" >
+		  </div>
+		  
+		<div class="mySlides fade">
+			<img src="SirWinston.png"  height= "500" width= "320">
+		</div>	
+		
+		<div class="mySlides fade">
+		  <img src="YouCantEscape.png" height= "500" width= "320" >
+		</div> 
+	
+	<br>
+		<div style="text-align:center">
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+		<span class="dot"></span>
+		<span class="dot"></span> 
+		<span class="dot"></span>
+	
+	</div>
+	</div>
+<div id="fullleft">
+<h1>Sludgescape</h1>
+<p>By: Thomas Tabacchi, Brandon Downing, Brandon Gulielmo and Will Pennock</p>
+<h2>Summary</h2>
+<p>
+Co-operative board game where everything in the game is out to kill you. In this post apocalyptic world you and five others
+must brave this wasteland in order to find the necessary equipment to kill the final boss that is threatening your already not so 
+great way of life
+</p>
+
+<h3>What I worked On</h3>
+<ul>
+	<li>Game balance</li>
+	<li>Creating over 150 loot cards</li>
+	<li>Play-testing</li>
+	<li>Prototyping</li>
+	<li>Budgeting</li>
+	<li>Writing rules</li>
+	<li>Pitching an idea</li>
+</ul>
+</div>
+</nav>
+
+<script>
+	var slideIndex = 0;
+	showSlides();
+	
+	function showSlides() {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	  setTimeout(showSlides, 3000); // Change image every 2 seconds
+	}
+	</script>
+</body>

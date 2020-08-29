@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<LINK REL=StyleSheet HREF="style.css" TYPE="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">  
+	<title>Portfolio HomePage</title>	
+	<style>
+	img{
+	max-height: 200px;
+	text-align: center;
+}
+	</style>
+</head>
+
+<body>
+
+
+
+<nav>
+<ol>
+	<li class="navigation"><p><a  class="active" href="Project3.html">Projects</a></p></li>
+	
+</ol>
+</nav>
+<h1>Thomas Tabacchi's Portfolio</h1>
+
+<div class="slideshow-container">
+
+	<div class="mySlides fade">
+	  <img src="devHeckBattleScreen.png" style="width:100%">
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="Bardo Cards2.jpg" style="width:100%">
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="Escaperoom2.png" style="width:100%">
+	</div>
+	
+	<div class="mySlides fade">
+		<img src="Mixtape DesignDoc.jpg" style="width:100%">
+	</div>
+	<div class="mySlides fade">
+		<img src="OneWay Out COmbat.png" style="width:100%">
+	</div>
+	<div class="mySlides fade">
+		<img src="Sludgescape Boxart (1).png" style="width:100%">
+	</div>
+	
+</div>
+<br>
+	<div style="text-align:center">
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+	<span class="dot"></span>
+	<span class="dot"></span>
+	<span class="dot"></span>
+</div>
+
+
+<div id="left">
+<h3 id="weird">Digital Projects</h3>
+<ul>	
+	<li><a  href="escapeRoom.html">Escape Room</a></li>
+	<li><a  href="devHeck.html">Dev Heck</a></li>
+	<li><a  href="audioVisualizer.html">Audio Visualizer</a></li>
+	<li><a  href="mixtapeByJJWest.html">Mixtape by JJWest</a></li>
+	<li><a  href="oneWayOut.html">One Way Out</a></li>
+</ul>
+
+</div>
+<div id="right">
+
+<h3>Analog Projects</h3>
+<ul></ul>
+	<li><a href="crusade.html">Crusade</a></li>
+	<li><a href="sludgescape.html">Sludgescape</a></li>
+	<li><a href="bardo.html">Bardo</a></li>
+</div>
+
+
+<script>
+	var slideIndex = 0;
+	showSlides();
+	
+	function showSlides() {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	  setTimeout(showSlides, 3000); // Change image every 2 seconds
+	}
+	</script>
+</body>

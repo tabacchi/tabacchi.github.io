@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<LINK REL=StyleSheet HREF="style.css" TYPE="text/css">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+	<title>Portfolio HomePage</title>	
+</head>
+<body>
+
+<nav>
+<ol>
+	<li class="navigation"><p><a href="Project3.html">Projects</a></p></li>
+
+</ol>
+</nav>
+<div id="fullright">
+
+<div class="slideshow-container-analog">
+
+	<div class="mySlides fade">
+	  <img src="Actions Card.png" height= "500" width= "320" >
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="CrusadeCard Back.png"  height= "500" width= "320">
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="Crusade.png"   height= "500" width= "320">
+	</div>
+	
+
+
+
+<br>
+	<div style="text-align:center">
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+
+</div>
+</div>
+<div id="fullleft">
+<h1>Crusade</h1>
+<p>By: Thomas Tabacchi, Brandon Downing, Brandon Gulielmo and Will Pennock</p>
+
+<h2>Summary</h2>
+<p>
+A competitive European style board game. In this game the player takes on the role of a king who 
+must use his subjects to make buildings, purchase rule changes and build their army. 
+</p>
+
+<h3>What I worked On</h3>
+<ul>
+	<li>Game balance</li>
+	<li>Play-testing</li>
+	<li>Prototyping</li>
+	<li>Budgeting</li>
+	<li>Writing rules using Indesign </li>
+	<li>Pitching an idea</li>
+</ul>
+</div>
+<script>
+	var slideIndex = 0;
+	showSlides();
+	
+	function showSlides() {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	  setTimeout(showSlides, 3000); // Change image every 2 seconds
+	}
+	</script>
+</body>

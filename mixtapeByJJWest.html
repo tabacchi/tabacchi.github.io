@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<LINK REL=StyleSheet HREF="style.css" TYPE="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+	<title>Portfolio HomePage</title>
+	<style>
+		img{
+		max-height: 200px;
+		text-align: center;
+	}
+		</style>
+</head>
+
+<body>
+
+<nav>
+<ol>
+	<li class="navigation"><p><a href="Project3.html">Projects</a></p></li>
+</ol>
+</nav>
+
+
+<h1>Mixtape by JJWest</h1>
+<div class="slideshow-container">
+
+	<div class="mySlides fade">
+	  <img src="mixtapeMainmenu.PNG" style="width:100%">
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="Mixtape.PNG" style="width:100%">
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="Mixtape DesignDoc.jpg" style="width:100%">
+	</div>
+	
+	<div class="mySlides fade">
+		<img src="Screenshot (30).png" style="width:100%">
+	</div>
+
+</div>
+<br>
+	<div style="text-align:center">
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+	<span class="dot"></span>
+</div>
+
+<p>By: Thomas Tabacchi, Jajuan Webster, Jared Miller, William Pennock and Sonya Sachdev </p>
+<h2>Summary</h2>
+<p>
+A 2d platformer where according to the beat of the music enemies will spawn and platforms will spawn and despawn.
+</p>
+
+
+<h3>What I Worked On</h3>
+<ul>
+	<li>Platforms spawning based on music beat</li>
+	<li>Handling user error</li>
+	<li>Designing the level one map</li>
+	<li>Interface</li>
+	<li>Enemy movement</li>
+</ul>
+
+
+<script>
+	var slideIndex = 0;
+	showSlides();
+	
+	function showSlides() {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	  setTimeout(showSlides, 3000); // Change image every 2 seconds
+	}
+	</script>
+</body>
