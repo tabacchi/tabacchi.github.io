@@ -10,9 +10,12 @@
 	<title>Portfolio HomePage</title>	
 	<style>
 	img{
-	max-height: 200px;
-	text-align: center;
-}
+		border-style: solid;
+		box-shadow: 10px 10px 5px grey;
+	}
+	h1{
+		text-decoration: underline;
+	}
 	</style>
 </head>
 
@@ -22,88 +25,42 @@
 
 <nav>
 <ol>
-	<li class="navigation"><p><a  class="active" href="index.html">Projects</a></p></li>
-	
+	<li class="navigation"><p><a href="index.html">Projects</a></p></li>
+	<li class="navigation"><p><a  class="active" href="AboutMe.html">About Me</a></p></li>
 </ol>
 </nav>
-<h1>Thomas Tabacchi's Portfolio</h1>
-
-<div class="slideshow-container">
-
-	<div class="mySlides fade">
-	  <img src="devHeckBattleScreen.png" style="width:100%">
-	</div>
-	
-	<div class="mySlides fade">
-	  <img src="Bardo Cards2.jpg" style="width:100%">
-	</div>
-	
-	<div class="mySlides fade">
-	  <img src="Escaperoom2.png" style="width:100%">
-	</div>
-	
-	<div class="mySlides fade">
-		<img src="Mixtape DesignDoc.jpg" style="width:100%">
-	</div>
-	<div class="mySlides fade">
-		<img src="OneWay Out COmbat.png" style="width:100%">
-	</div>
-	<div class="mySlides fade">
-		<img src="Sludgescape Boxart (1).png" style="width:100%">
-	</div>
-	
-</div>
-<br>
-	<div style="text-align:center">
-	<span class="dot"></span> 
-	<span class="dot"></span> 
-	<span class="dot"></span> 
-	<span class="dot"></span>
-	<span class="dot"></span>
-	<span class="dot"></span>
-</div>
-
-
+<h1>About Me</h1>
 <div id="left">
-<h3 id="weird">Digital Projects</h3>
-<ul>	
-	<li><a  href="escapeRoom.html">Escape Room</a></li>
-	<li><a  href="devHeck.html">Dev Heck</a></li>
-	<li><a  href="audioVisualizer.html">Audio Visualizer</a></li>
-	<li><a  href="mixtapeByJJWest.html">Mixtape by JJWest</a></li>
-	<li><a  href="oneWayOut.html">One Way Out</a></li>
-</ul>
-
+<h2>Contact Info</h2>
+<ul>
+	<li>Phone: 845-531-8545</li>
+	<li>Email: tabacchi0128@gmail.com</li>
+	<li><a href="https://www.linkedin.com/in/thomas-tabacchi-7b7b92105/">LinkedIn</a></li>
+	<li><a href="https://github.com/tabacchi">Github</a></li>
+</ul>	
 </div>
 <div id="right">
-
-<h3>Analog Projects</h3>
-<ul></ul>
-	<li><a href="crusade.html">Crusade</a></li>
-	<li><a href="sludgescape.html">Sludgescape</a></li>
-	<li><a href="bardo.html">Bardo</a></li>
+	<img src="me.png" height ="240">
 </div>
 
+<h3>Bio</h3>
+<p>I am a graduate of RIT with a major in Game Design and Developement. I enjoy working on
+	Games in my own free time. I am an avid learner and am always trying to pick up new talents
+	and interests. I love working in teams. I really enjoy the collabrative enviorment of
+	getting to work and meet new and different types of people. Bouncing ideas off people
+	and constantly trying to get feedback so I can improve and grow.
+</p>
+<h3>Goal</h3>
+<p>My main goal right now is to start my career. I am looking for a profesional
+	place where I can grow and learn. I want to be pushed to always be leaning the next new things
+	and love challenges.
+</p>
 
-<script>
-	var slideIndex = 0;
-	showSlides();
-	
-	function showSlides() {
-	  var i;
-	  var slides = document.getElementsByClassName("mySlides");
-	  var dots = document.getElementsByClassName("dot");
-	  for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";  
-	  }
-	  slideIndex++;
-	  if (slideIndex > slides.length) {slideIndex = 1}    
-	  for (i = 0; i < dots.length; i++) {
-		dots[i].className = dots[i].className.replace(" active", "");
-	  }
-	  slides[slideIndex-1].style.display = "block";  
-	  dots[slideIndex-1].className += " active";
-	  setTimeout(showSlides, 3000); // Change image every 2 seconds
-	}
-	</script>
+<h3>Interests</h3>
+<ul></ul>
+	<li>Baking</li>
+	<li>Cosplay</li>
+	<li>Anime</li>
+	<li>Making and Playing Games</li>
+
 </body>
