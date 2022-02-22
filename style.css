@@ -5,43 +5,30 @@ ol{
 	overflow: hidden;
 	background-color:#333;	
 }
-li{
+li, label{
 	font-family: 'Open Sans', sans-serif;
 	padding-top: 10px;
 	font-size: 20px;
 }	
 
-a:link{
+a{
+
 	text-decoration: none;
 }
-a:hover{
-	background-color: rgb(80, 201, 84);
-}
-
-.navigation a:hover{
-	background-color: rgb(49, 124, 52);
-}
-
-.navigation{
-	float:left;
-}
-.navigation a{
-	display:block;
-	color:white;
-	text-align:center;
-	padding:14px 16px;
-	text-decoration:none;
-}
 .active{
-	background-color:#4CAF50;
+	background-color:white;
+	color:black
 }
-.navigation{
-	border-right:1px solid #bbb;
+nav{
+	background-color: black;
+}
+nav-link{
+	#fdfad6
 }
 
 
 body{
-	background-color:rgb(253, 253, 253);
+	background-color:white;
 }
 
 #right{
@@ -59,7 +46,9 @@ body{
 	width:50%;
 }
 img{
-	max-width:800px;
+	  display: block;
+  margin-left: auto;
+  margin-right: auto;
 	
 }
 .half
